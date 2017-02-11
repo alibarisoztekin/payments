@@ -11,6 +11,7 @@
 #import "AmazonPaymentService.h"
 #import "StripePaymentService.h"
 #import "PaypalPaymentService.h"
+#import "ApplePaymentService.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,7 +19,7 @@ int main(int argc, const char * argv[]) {
         while (YES) {
          
         PaymentGateway* paymentGateway = [[PaymentGateway alloc] init];
-        NSLog(@"Thank you for shopping at Acme.com\n\n Your total today is $%i Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon",payment);
+        NSLog(@"Thank you for shopping at Acme.com\n\n Your total today is $%i Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon, 4:ApplePay",payment);
         char userInput[3];
         
         fgets( userInput, 3, stdin);
@@ -37,7 +38,10 @@ int main(int argc, const char * argv[]) {
                 paymentGateway.paymentDelegate =[[AmazonPaymentService alloc] init];
                 [paymentGateway.paymentDelegate processPaymentAmount:payment];
                 break;
-                
+            case '4':
+                paymentGateway.paymentDelegate =[[ApplePaymentService alloc] init];
+                [paymentGateway.paymentDelegate processPaymentAmount:payment];
+                break;
             default:
                 break;
         }

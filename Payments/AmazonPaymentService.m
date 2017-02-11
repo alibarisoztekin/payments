@@ -12,7 +12,22 @@
 
 -(void) processPaymentAmount:(NSInteger) payment
 {
-    NSLog(@"Amazon processed amount $%li",payment);
+    if([self canProcessPayment])
+        NSLog(@"Amazon processed amount $%li",payment);
+    else
+        NSLog(@"Payment can't be processed at this time");
+}
+
+-(BOOL) canProcessPayment
+{
+    BOOL result;
+    int processor = arc4random_uniform(2);
+    if (processor ==1)
+        result = YES;
+    else
+        result = NO;
+    
+    return result;
 }
 
 @end

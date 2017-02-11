@@ -1,19 +1,19 @@
 //
-//  PaypalPaymentService.m
+//  ApplePaymentService.m
 //  Payments
 //
 //  Created by Ali Barış Öztekin on 2017-02-10.
 //  Copyright © 2017 Ali Barış Öztekin. All rights reserved.
 //
 
-#import "PaypalPaymentService.h"
+#import "ApplePaymentService.h"
 
-@implementation PaypalPaymentService
+@implementation ApplePaymentService 
 
 -(void) processPaymentAmount:(NSInteger) payment
 {
     if([self canProcessPayment])
-        NSLog(@"Paypal processed amount $%li",payment);
+        NSLog(@"ApplePay processed amount $%li",payment);
     else
         NSLog(@"Payment can't be processed at this time");
 }
@@ -29,5 +29,6 @@
     
     return result;
 }
+
 
 @end

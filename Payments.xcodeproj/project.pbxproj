@@ -12,6 +12,7 @@
 		E14739061E4E681E00C6D000 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = E14739051E4E681E00C6D000 /* StripePaymentService.m */; };
 		E14739091E4E684300C6D000 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = E14739081E4E684300C6D000 /* PaypalPaymentService.m */; };
 		E147390C1E4E688500C6D000 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = E147390B1E4E688500C6D000 /* AmazonPaymentService.m */; };
+		E14739101E4EB7C200C6D000 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = E147390F1E4EB7C200C6D000 /* ApplePaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		E14739081E4E684300C6D000 /* PaypalPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaypalPaymentService.m; path = ../PaypalPaymentService.m; sourceTree = "<group>"; };
 		E147390A1E4E688500C6D000 /* AmazonPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
 		E147390B1E4E688500C6D000 /* AmazonPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		E147390E1E4EB7C200C6D000 /* ApplePaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		E147390F1E4EB7C200C6D000 /* ApplePaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				E14738FA1E4E5A2300C6D000 /* main.m */,
+				E147390E1E4EB7C200C6D000 /* ApplePaymentService.h */,
+				E147390F1E4EB7C200C6D000 /* ApplePaymentService.m */,
 				E14739011E4E613100C6D000 /* PaymentGateway.h */,
 				E14739021E4E613100C6D000 /* PaymentGateway.m */,
 				E14739041E4E681E00C6D000 /* StripePaymentService.h */,
@@ -142,6 +147,7 @@
 				E14738FB1E4E5A2300C6D000 /* main.m in Sources */,
 				E147390C1E4E688500C6D000 /* AmazonPaymentService.m in Sources */,
 				E14739061E4E681E00C6D000 /* StripePaymentService.m in Sources */,
+				E14739101E4EB7C200C6D000 /* ApplePaymentService.m in Sources */,
 				E14739031E4E613100C6D000 /* PaymentGateway.m in Sources */,
 				E14739091E4E684300C6D000 /* PaypalPaymentService.m in Sources */,
 			);
@@ -270,6 +276,7 @@
 				E14739001E4E5A2300C6D000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
